@@ -1,0 +1,8 @@
+executable = ./Run2015D_SingleMuon.sh
+output = out/$(ProcId).$(ClusterID).out
+error = err/$(ProcId).$(ClusterID).err
+log = log/$(ProcId).$(ClusterID).log
+max_retries = 3
+RequestCpus = 1
++JobFlavour = "tomorrow"
+queue arguments from arguments.txt

@@ -1,0 +1,94 @@
+INFO:    Environment variable SINGULARITY_CACHEDIR is set, but APPTAINER_CACHEDIR is preferred
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:9af014e48b60966deaad8e74a4e09a84f866ff6b03017138d2a8e92511976712
+Copying blob sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc
+Copying blob sha256:9cfb9bdcfa44dcc61a786117a26e54dddde93271b9b4f08e2ee1cdb43644f80f
+Copying blob sha256:5458ec292954bf94b497f5e9f8fb14451e056ad649e7e296211ae891f558ae91
+Copying blob sha256:ec15c085eebbc33447b2b13c70a998f0a27f739b22c26b450abdba90a8444286
+Copying blob sha256:9d467dd199ea4da6f3e46bb9f19a0dc3758b87705f46d0fa3eb29acbc78d8044
+Copying blob sha256:61949c302af8ce8fe965b8330699238f8d8a77859aeb7a9a6595cdb744972ee2
+Copying config sha256:3751ca2797446e250b1621c64c45f2d5406d2fd0652360ae9475df673ae1f321
+Writing manifest to image destination
+Storing signatures
+2024/01/20 17:24:52  info unpack layer: sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc
+2024/01/20 17:24:53  warn rootless{usr/bin/newgidmap} ignoring (usually) harmless EPERM on setxattr "security.capability"
+2024/01/20 17:24:53  warn rootless{usr/bin/newuidmap} ignoring (usually) harmless EPERM on setxattr "security.capability"
+2024/01/20 17:24:53  warn rootless{usr/bin/ping} ignoring (usually) harmless EPERM on setxattr "security.capability"
+2024/01/20 17:24:58  warn rootless{usr/sbin/arping} ignoring (usually) harmless EPERM on setxattr "security.capability"
+2024/01/20 17:24:58  warn rootless{usr/sbin/clockdiff} ignoring (usually) harmless EPERM on setxattr "security.capability"
+2024/01/20 17:25:01  info unpack layer: sha256:9cfb9bdcfa44dcc61a786117a26e54dddde93271b9b4f08e2ee1cdb43644f80f
+2024/01/20 17:25:04  warn rootless{usr/bin/wall} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2024/01/20 17:25:11  warn rootless{usr/libexec/openssh/ssh-keysign} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2024/01/20 17:25:14  info unpack layer: sha256:5458ec292954bf94b497f5e9f8fb14451e056ad649e7e296211ae891f558ae91
+2024/01/20 17:25:16  warn rootless{usr/bin/ssh-agent} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2024/01/20 17:25:24  info unpack layer: sha256:ec15c085eebbc33447b2b13c70a998f0a27f739b22c26b450abdba90a8444286
+2024/01/20 17:25:24  info unpack layer: sha256:9d467dd199ea4da6f3e46bb9f19a0dc3758b87705f46d0fa3eb29acbc78d8044
+2024/01/20 17:25:25  info unpack layer: sha256:9af014e48b60966deaad8e74a4e09a84f866ff6b03017138d2a8e92511976712
+2024/01/20 17:25:25  info unpack layer: sha256:61949c302af8ce8fe965b8330699238f8d8a77859aeb7a9a6595cdb744972ee2
+INFO:    Creating SIF file...
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+Cloning into '/pool/condor/dir_14982/CMSSW_10_6_30/src'...
+Switched to a new branch 'from-CMSSW_10_6_30'
+From .
+ * [new ref]                            -> merge-attempt
+From https://github.com/cms-sw/cmssw
+ * [new ref]                 refs/pull/39040/head -> cms-sw/refs/pull/39040/head
+Switched to branch 'merge-attempt'
+Switched to branch 'from-CMSSW_10_6_30'
+20-Jan-2024 17:31:41 CET  Initiating request to open file root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root
+%MSG-w XrdAdaptor:  file_open 20-Jan-2024 17:31:44 CET pre-events
+Data is served from cern.ch instead of original site eospublic
+%MSG
+20-Jan-2024 17:31:48 CET  Successfully opened file root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root
+2024-01-20 17:31:58.208596: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+20-Jan-2024 19:40:49 CET  Closed file root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root
+TimeReport> Time report complete in 7779.87 seconds
+ Time Summary: 
+ - Min event:   0.04635
+ - Max event:   23.7702
+ - Avg event:   0.155126
+ - Total loop:  7709.21
+ - Total init:  61.2289
+ - Total job:   7779.87
+ - EventSetup Lock:   0.000113487
+ - EventSetup Get:   115.802
+ Event Throughput: 6.30181 ev/s
+ CPU Summary: 
+ - Total loop:  7508.43
+ - Total init:  44.3417
+ - Total extra: 0
+ - Total job:   7562.09
+ Processing Summary: 
+ - Number of Events:  48582
+ - Number of Global Begin Lumi Calls:  19
+ - Number of Global Begin Run Calls: 4
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 XrdAdaptor           -w file_open                              1        1
+    2 TimeReport           -e AfterModEndJob                         1        1
+    3 fileAction           -s file_close                             1        1
+    4 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptor           pre-events                        
+    2 TimeReport           PostGlobalEndRun                  
+    3 fileAction           PostGlobalEndRun                  
+    4 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 1                   1
+Error                   1                   1
+System                  3                   3
+
+dropped waiting message count 0
+[16MB/26.55MB][ 60%][==============================>                   ][16MB/s]  [26.55MB/26.55MB][100%][==================================================][26.55MB/s]  [26.55MB/26.55MB][100%][==================================================][26.55MB/s]  

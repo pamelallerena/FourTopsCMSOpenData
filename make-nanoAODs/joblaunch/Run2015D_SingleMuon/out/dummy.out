@@ -1,0 +1,628 @@
+total 44
+drwx------.  5 pllerena zh     4096 Jan 20 17:24 .
+drwxr-xr-x. 99 condor   condor 4096 Jan 20 17:24 ..
+-rwx------.  1 pllerena zh       48 Jan 20 17:24 .chirp.config
+-rwxr-xr-x.  1 pllerena zh     2777 Jan 20 17:24 condor_exec.exe
+-rw-r--r--.  1 pllerena zh        0 Jan 20 17:24 _condor_stderr
+-rw-r--r--.  1 pllerena zh        0 Jan 20 17:24 _condor_stdout
+-rw-r--r--.  1 pllerena zh     2368 Jan 20 17:24 execute.sh
+-rw-r--r--.  1 condor   condor 5634 Jan 20 17:24 .job.ad
+-rw-r--r--.  1 condor   condor 7639 Jan 20 17:24 .machine.ad
+-rw-------.  1 pllerena zh     2524 Jan 20 17:24 pllerena.cc
+drwx------.  2 pllerena zh        6 Jan 20 17:24 srv
+drwx------.  2 pllerena zh        6 Jan 20 17:24 tmp
+drwx------.  3 pllerena zh       17 Jan 20 17:24 var
+/pool/condor/dir_14982
+b9g21p9547.cern.ch
+### Begin of job
+ID: 0
+Process: Run2015D_SingleMuon
+File: root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root
+EOS home: /eos/user/p/pllerena
+Output directory: /eos/user/p/pllerena/4topsoutput/ntuples/
+NANOAOD base: /afs/cern.ch/user/p/pllerena/workspace/4tops/produce-nanoAODs
+CMSSW config:
+Hostname: b9g21p9547.cern.ch
+How am I? uid=150411(pllerena) gid=1399(zh) groups=1399(zh) context=system_u:system_r:condor_startd_t:s0
+Where am I? /pool/condor/dir_14982
+What is my system? Linux b9g21p9547.cern.ch 5.14.0-284.30.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Aug 25 09:13:12 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+### Start working
+total 57
+drwx------. 2 pllerena zh     4096 Jan  8 19:03 .
+drwxr-xr-x. 2    65534 65534  4096 Jan 19 22:40 ..
+drwxr-xr-x. 2 pllerena zh     4096 Nov  7 19:55 4tops
+drwxr-xr-x. 2 pllerena zh     4096 Dec 10 23:03 4topsoutput
+-rw-------. 1 pllerena zh      110 Feb  8  2023 .bash_history
+drwx------. 2 pllerena zh     4096 Dec  8  2022 .config
+drwx------. 2 pllerena zh     4096 Dec  8  2022 .keras
+drwx------. 2 pllerena zh     4096 Jun  1  2023 .local
+-rw-r--r--. 1 pllerena zh     1648 Jan  8 19:03 make_jf.py
+-rw-r--r--. 1 pllerena zh     2676 Jan  8 18:45 mkjk.py
+drwx------. 2 pllerena zh     4096 Dec  8  2022 .pki
+drwx------. 2 pllerena zh     4096 Dec 13  2022 .ssh
+drwx------. 2 pllerena zh     4096 Jun 15  2023 SWAN_projects
+-rw-------. 1 pllerena zh    11005 Dec 14  2022 x509up_u15148
+/pool/condor/dir_14982
+el9_amd64_gcc10
+slc7_amd64_gcc820
+
+Listing installed projects available for platform >> slc7_amd64_gcc820 <<
+
+--------------------------------------------------------------------------------
+| Project Name  | Project Version          | Project Location                  |
+--------------------------------------------------------------------------------
+
+  CMSSW           CMSSW_10_6_0_pre1          
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_0_pre1
+  CMSSW           CMSSW_10_6_0_pre2          
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_0_pre2
+  CMSSW           CMSSW_10_6_0_pre3          
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_0_pre3
+  CMSSW           CMSSW_10_6_0_pre4          
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_0_pre4
+  CMSSW           CMSSW_10_6_0               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_0
+  CMSSW           CMSSW_10_6_0_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_0_patch1
+  CMSSW           CMSSW_10_6_0_patch2        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_0_patch2
+  CMSSW           CMSSW_10_6_1               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_1
+  CMSSW           CMSSW_10_6_1_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_1_patch1
+  CMSSW           CMSSW_10_6_1_patch2        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_1_patch2
+  CMSSW           CMSSW_10_6_1_patch3        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_1_patch3
+  CMSSW           CMSSW_10_6_2               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_2
+  CMSSW           CMSSW_10_6_3               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_3
+  CMSSW           CMSSW_10_6_3_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_3_patch1
+  CMSSW           CMSSW_10_6_4               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_4
+  CMSSW           CMSSW_10_6_4_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_4_patch1
+  CMSSW           CMSSW_10_6_4_patch2        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_4_patch2
+  CMSSW           CMSSW_10_6_5               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_5
+  CMSSW           CMSSW_10_6_5_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_5_patch1
+  CMSSW           CMSSW_10_6_6               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_6
+  CMSSW           CMSSW_10_6_7               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_7
+  CMSSW           CMSSW_10_6_8               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_8
+  CMSSW           CMSSW_10_6_8_patch1        
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_8_patch1
+  CMSSW           CMSSW_10_6_9               
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_9
+  CMSSW           CMSSW_10_6_10              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_10
+  CMSSW           CMSSW_10_6_11_CANDIDATE    
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_11_CANDIDATE
+  CMSSW           CMSSW_10_6_11_CANDIDATE2   
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_11_CANDIDATE2
+  CMSSW           CMSSW_10_6_11_CANDIDATE3   
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_11_CANDIDATE3
+  CMSSW           CMSSW_10_6_11              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_11
+  CMSSW           CMSSW_10_6_11_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_11_patch1
+  CMSSW           CMSSW_10_6_12              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_12
+  CMSSW           CMSSW_10_6_13              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_13
+  CMSSW           CMSSW_10_6_14_Pyt8240BugFix  
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_14_Pyt8240BugFix
+  CMSSW           CMSSW_10_6_14              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_14
+  CMSSW           CMSSW_10_6_15              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_15
+  CMSSW           CMSSW_10_6_16              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_16
+  CMSSW           CMSSW_10_6_17              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_17
+  CMSSW           CMSSW_10_6_17_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_17_patch1
+  CMSSW           CMSSW_10_6_18              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_18
+  CMSSW           CMSSW_10_6_19              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_19
+  CMSSW           CMSSW_10_6_19_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_19_patch1
+  CMSSW           CMSSW_10_6_19_patch2       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_19_patch2
+  CMSSW           CMSSW_10_6_19_patch3       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_19_patch3
+  CMSSW           CMSSW_10_6_20              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_20
+  CMSSW           CMSSW_10_6_20_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_20_patch1
+  CMSSW           CMSSW_10_6_21              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_21
+  CMSSW           CMSSW_10_6_22              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_22
+  CMSSW           CMSSW_10_6_23              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_23
+  CMSSW           CMSSW_10_6_24              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_24
+  CMSSW           CMSSW_10_6_25              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_25
+  CMSSW           CMSSW_10_6_26              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_26
+  CMSSW           CMSSW_10_6_27              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_27
+  CMSSW           CMSSW_10_6_28              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_28
+  CMSSW           CMSSW_10_6_28_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_28_patch1
+  CMSSW           CMSSW_10_6_29              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_29
+  CMSSW           CMSSW_10_6_29_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_29_patch1
+  CMSSW           CMSSW_10_6_30              
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30
+  CMSSW           CMSSW_10_6_30_patch1       
+                                         --> /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw-patch/CMSSW_10_6_30_patch1
+Merge made by the 'recursive' strategy.
+ .../python/Modifier_run2_nanoAOD_106X2015_cff.py   |  3 +++
+ Configuration/StandardSequences/python/Eras.py     |  2 +-
+ PhysicsTools/NanoAOD/python/electrons_cff.py       | 19 ++++++++----------
+ PhysicsTools/NanoAOD/python/jets_cff.py            | 23 ++++++++++++++++------
+ PhysicsTools/NanoAOD/python/nano_cff.py            | 14 +++++++------
+ PhysicsTools/NanoAOD/python/nano_eras_cff.py       |  1 +
+ PhysicsTools/NanoAOD/python/nanogen_cff.py         |  2 +-
+ PhysicsTools/NanoAOD/python/photons_cff.py         |  4 ++--
+ PhysicsTools/NanoAOD/python/protons_cff.py         |  2 +-
+ PhysicsTools/NanoAOD/python/taus_cff.py            | 11 +++++++----
+ PhysicsTools/NanoAOD/python/triggerObjects_cff.py  |  3 ++-
+ .../NanoAOD/python/ttbarCategorization_cff.py      |  6 ++++--
+ 12 files changed, 55 insertions(+), 35 deletions(-)
+ create mode 100644 Configuration/Eras/python/Modifier_run2_nanoAOD_106X2015_cff.py
+>> Checking Configuration/StandardSequences CMSSW_10_6_30
+   x Configuration/StandardSequences/python/Eras.py
+>> Checking PhysicsTools/NanoAOD CMSSW_10_6_30
+   x PhysicsTools/NanoAOD/python/electrons_cff.py
+   x PhysicsTools/NanoAOD/python/jets_cff.py
+   x PhysicsTools/NanoAOD/python/nano_cff.py
+   x PhysicsTools/NanoAOD/python/nano_eras_cff.py
+   x PhysicsTools/NanoAOD/python/nanogen_cff.py
+   x PhysicsTools/NanoAOD/python/photons_cff.py
+   x PhysicsTools/NanoAOD/python/protons_cff.py
+   x PhysicsTools/NanoAOD/python/taus_cff.py
+   x PhysicsTools/NanoAOD/python/triggerObjects_cff.py
+   x PhysicsTools/NanoAOD/python/ttbarCategorization_cff.py
+Checking out these packages: 3
+Configuration/Applications (python)
+HLTrigger/Configuration (python)
+RecoEgamma/EgammaElectronProducers (python)
+total 20
+drwxr-xr-x.  7 pllerena zh  152 Jan 20 17:27 .
+drwxr-xr-x. 18 pllerena zh 4096 Jan 20 17:27 ..
+-rw-r--r--.  1 pllerena zh  486 Jan 20 17:26 .clang-format
+-rw-r--r--.  1 pllerena zh 1520 Jan 20 17:26 .clang-tidy
+drwxr-xr-x.  8 pllerena zh 4096 Jan 20 17:27 .git
+-rw-r--r--.  1 pllerena zh   36 Jan 20 17:26 .gitignore
+drwxr-xr-x.  5 pllerena zh   63 Jan 20 17:27 Configuration
+drwxr-xr-x.  3 pllerena zh   27 Jan 20 17:27 HLTrigger
+drwxr-xr-x.  3 pllerena zh   21 Jan 20 17:27 PhysicsTools
+drwxr-xr-x.  3 pllerena zh   37 Jan 20 17:27 RecoEgamma
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Building CMSSW version CMSSW_10_6_30 ----
+------- copying files from src/Configuration/Applications/scripts -------
+>> copied cmsDriver.py
+------- copying files from src/PhysicsTools/NanoAOD/scripts -------
+>> copied haddnano.py
+------- copying files from src/HLTrigger/Configuration/scripts -------
+>> copied hltIntegrationTests
+>> copied edmPluginCoverage
+>> copied hltDumpStream
+>> copied hltCheckPrescaleModules
+>> copied hltConfigFromDB
+>> copied hltGetConfiguration
+>> copied hltCompareResults
+>> copied hltListPaths
+>> copied hltFindDuplicates
+>> copied extend_argparse.py
+>> Subsystem BigProducts built
+>> Entering Package Configuration/Eras
+>> Creating project symlinks
+>> Entering Package Configuration/StandardSequences
+>> Entering Package Configuration/Applications
+>> Entering Package PhysicsTools/NanoAOD
+>> Entering Package HLTrigger/Configuration
+>> Entering Package RecoEgamma/EgammaElectronProducers
+>> Leaving Package Configuration/Applications
+>> Package Configuration/Applications built
+>> Leaving Package HLTrigger/Configuration
+>> Package HLTrigger/Configuration built
+>> Subsystem HLTrigger built
+>> Leaving Package Configuration/Eras
+>> Leaving Package Configuration/StandardSequences
+>> Package Configuration/StandardSequences built
+>> Package Configuration/Eras built
+>> Subsystem Configuration built
+Entering library rule at src/PhysicsTools/NanoAOD/plugins
+Entering library rule at RecoEgamma/EgammaElectronProducers
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/SimpleFlatTableProducerPlugins.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NativeArrayTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/BJetEnergyRegressionMVA.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/BJetEnergyRegressionVarProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/TriggerOutputBranches.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/IsoValueMapProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/UniqueStringProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/EGMSeedGainProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/EnergyRingsTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/L1TriggerResultsConverter.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/IsFromLostTrackMapProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/CandMCMatchTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/LHCInfoProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/LeptonJetVarProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/GenWeightsTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/ProtonProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/JetIDValueMap.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/LHETablesProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/TriggerObjectTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NanoAODBaseCrossCleaner.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/TableOutputBranches.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/BTagSFProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/VertexTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NanoAODOutputModule.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/MuonIDTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/EventStringOutputBranches.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NanoAODSimpleCrossCleaner.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/SummaryTableOutputBranches.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/GlobalVariablesTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/GenJetFlavourTableProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/LeptonInJetProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NanoAODDQM.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/NPUTablesProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/GenJetGenPartMerger.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/GenJetTauTaggerProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/PileupJetIDVarProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/EGMEnergyVarProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/plugins/VIDNestedWPBitmapProducer.cc 
+>> Compiling  /pool/condor/dir_14982/CMSSW_10_6_30/src/PhysicsTools/NanoAOD/test/runtestPhysicsToolsNanoAOD.cpp 
+Entering library rule at src/RecoEgamma/EgammaElectronProducers/plugins
+>> Compiling  /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/src/LowPtGsfElectronIDHeavyObjectCache.cc 
+>> Compiling  /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/src/LowPtGsfElectronFeatures.cc 
+>> Compiling  /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/src/LowPtGsfElectronSeedHeavyObjectCache.cc 
+Entering library rule at src/RecoEgamma/EgammaElectronProducers/test
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/SiStripElectronProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronSeedProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronFinalizer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronCoreBaseProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronIDProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronCoreProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronFull5x5Filler.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGSFToTrackLinker.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronSCProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/TrackingRegionsFromSuperClustersEDProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronSeedValueMapsProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronCoreEcalDrivenProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/LowPtGsfElectronCoreProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronEcalDrivenProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/ElectronNHitSeedProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GEDGsfElectronProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/SiStripElectronSeedProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GEDGsfElectronFinalizer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/SealModule.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronBaseProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GEDGsfElectronCoreProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/SiStripElectronAssociator.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/GsfElectronProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/plugins/ElectronSeedProducer.cc 
+>> Compiling edm plugin /pool/condor/dir_14982/CMSSW_10_6_30/src/RecoEgamma/EgammaElectronProducers/test/GEDValueMapAnalyzer.cc 
+>> Building binary runtestPhysicsToolsNanoAOD
+Copying tmp/slc7_amd64_gcc820/src/PhysicsTools/NanoAOD/test/runtestPhysicsToolsNanoAOD/runtestPhysicsToolsNanoAOD to productstore area:
+>> Building shared library tmp/slc7_amd64_gcc820/src/RecoEgamma/EgammaElectronProducers/src/RecoEgammaEgammaElectronProducers/libRecoEgammaEgammaElectronProducers.so
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/PhysicsTools/NanoAOD/plugins/PhysicsToolsNanoAODPlugins/libPhysicsToolsNanoAODPlugins.so
+Copying tmp/slc7_amd64_gcc820/src/RecoEgamma/EgammaElectronProducers/src/RecoEgammaEgammaElectronProducers/libRecoEgammaEgammaElectronProducers.so to productstore area:
+Leaving library rule at RecoEgamma/EgammaElectronProducers
+Leaving library rule at src/PhysicsTools/NanoAOD/plugins
+@@@@ Running edmWriteConfigs for PhysicsToolsNanoAODPlugins
+JetRegressionVarProducer
+BJetEnergyRegressionMVA
+MuonIsoValueMapProducer
+EleIsoValueMapProducer
+PhoIsoValueMapProducer
+IsoTrackIsoValueMapProducer
+EnergyRingsTable
+L1TriggerResultsConverter
+isFromLostTrackMapProducer
+candMcMatchTable
+MuonJetVarProducer
+ElectronJetVarProducer
+genWeightsTable
+ProtonProducer
+lheInfoTable
+BTagWeightTable
+muonIDTable
+genJetFlavourTable
+LepInJetProducer
+puTable
+PileupJetIDVarProducer
+ElectronEnergyVarProducer
+PhotonEnergyVarProducer
+EleVIDNestedWPBitmapProducer
+PhoVIDNestedWPBitmapProducer
+--- Registered EDM Plugin: PhysicsToolsNanoAODPlugins
+>> Leaving Package PhysicsTools/NanoAOD
+>> Package PhysicsTools/NanoAOD built
+>> Subsystem PhysicsTools built
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoEgamma/EgammaElectronProducers/test/RecoEgammaGEDValueMapAnalyzer/libRecoEgammaGEDValueMapAnalyzer.so
+Leaving library rule at src/RecoEgamma/EgammaElectronProducers/test
+@@@@ Running edmWriteConfigs for RecoEgammaGEDValueMapAnalyzer
+--- Registered EDM Plugin: RecoEgammaGEDValueMapAnalyzer
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoEgamma/EgammaElectronProducers/plugins/RecoEgammaEgammaElectronProducersPlugins/libRecoEgammaEgammaElectronProducersPlugins.so
+Leaving library rule at src/RecoEgamma/EgammaElectronProducers/plugins
+@@@@ Running edmWriteConfigs for RecoEgammaEgammaElectronProducersPlugins
+lowPtGsfElectronSeeds
+lowPtGsfElectronFinalizer
+defaultLowPtGsfElectronID
+lowPtGsfToTrackLinksDefault
+defaultLowPtGsfElectronSuperClusters
+trackingRegionsFromSuperClusters
+lowPtGsfElectronSeedValueMaps
+defaultLowPtGsfElectronCores
+electronNHitSeedProducer
+ecalDrivenElectronSeeds
+produceEcalDrivenGsfElectronCores
+--- Registered EDM Plugin: RecoEgammaEgammaElectronProducersPlugins
+>> Leaving Package RecoEgamma/EgammaElectronProducers
+>> Package RecoEgamma/EgammaElectronProducers built
+>> Subsystem RecoEgamma built
+gmake[1]: Entering directory '/pool/condor/dir_14982/CMSSW_10_6_30'
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+@@@@ Refreshing Plugins:edmPluginRefresh
+>> Creating project symlinks
+>> Done python_symlink
+>> Compiling python modules cfipython/slc7_amd64_gcc820
+>> Compiling python modules python
+>> Compiling python modules src/Configuration/Applications/python
+>> Compiling python modules src/Configuration/Eras/python
+>> Compiling python modules src/Configuration/StandardSequences/python
+>> Compiling python modules src/HLTrigger/Configuration/python
+>> Compiling python modules src/PhysicsTools/NanoAOD/python
+>> Compiling python modules src/RecoEgamma/EgammaElectronProducers/python
+>> Done generating edm plugin poisoned information
+>> Plugins of all types refreshed.
+>> All python modules compiled
+gmake[1]: Leaving directory '/pool/condor/dir_14982/CMSSW_10_6_30'
+finished setting up cmssw
+ISDATA: True
+# Auto generated configuration file
+# using:
+# Revision: 1.19
+# Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v
+# with command line options: --python_filename doublemuon_cfg.py --eventcontent NANOAOD --customise Configuration/DataProcessing/Utils.addMonitoring --datatier NANOAOD --fileout file:/home/hep/ekauffma/test/testaod1.root --conditions 106X_dataRun2_v36 --step NANO --filein file:root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root, filein file:root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/0034202D-A3A8-E511-BA9C-00259073E3DA.root --era Run2_25ns,run2_nanoAOD_106X2015 --no_exec --data -n -1
+
+# edited by ekauffma to allow for multiple file input via text file argument
+
+import sys, os
+
+import FWCore.ParameterSet.Config as cms
+
+from Configuration.Eras.Era_Run2_25ns_cff import Run2_25ns
+from Configuration.Eras.Modifier_run2_nanoAOD_106X2015_cff import run2_nanoAOD_106X2015
+import FWCore.PythonUtilities.LumiList as LumiList
+import FWCore.ParameterSet.Types as CfgTypes
+
+#---- sys.argv takes the parameters given as input cmsRun PhysObjectExtractor/python/poet_cfg.py <isData (default=False)>
+#----  e.g: cmsRun PhysObjectExtractor/python/poet_cfg.py True
+#---- NB the first two parameters are always "cmsRun" and the config file name
+#---- Work with data (if False, assumed MC simulations)
+#---- This needs to be in agreement with the input files/datasets below.
+if len(sys.argv) > 2:
+    isData = eval(sys.argv[2])
+else:
+    isData = False
+
+process = cms.Process('NANO',Run2_25ns,run2_nanoAOD_106X2015)
+
+### import of standard configurations ###
+process.load('SimGeneral.HepPDTESSource.pythiapdt_cfi')
+process.load('FWCore.MessageService.MessageLogger_cfi')
+
+process.MessageLogger.cerr.threshold = "WARNING"
+process.MessageLogger.categories.append("POET")
+process.MessageLogger.cerr.INFO = cms.untracked.PSet(
+    limit=cms.untracked.int32(-1))
+process.options = cms.untracked.PSet(wantSummary=cms.untracked.bool(True))
+
+process.load('Configuration.EventContent.EventContent_cff')
+ 
+if not isData:
+    process.load('SimGeneral.MixingModule.mixNoPU_cfi')
+
+process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
+
+if isData:
+    process.load('Configuration.StandardSequences.MagneticField_AutoFromDBCurrent_cff')
+else:
+    process.load('Configuration.StandardSequences.MagneticField_cff')
+
+process.load('PhysicsTools.NanoAOD.nano_cff')
+process.load('Configuration.StandardSequences.EndOfProcess_cff')
+
+process.maxEvents = cms.untracked.PSet(
+    input = cms.untracked.int32(-1)
+)
+
+# file to process is provided as argument
+#input_file = '../../' + sys.argv[-1] + '.txt'
+#with open(input_file) as file:
+#    lines = [line.rstrip() for line in file]#
+#lines = tuple(lines[:2]) # only process two files instead of fifty; use for testing purposes
+
+# Input source
+#process.source = cms.Source("PoolSource",
+ #   fileNames = cms.untracked.vstring(*lines),
+  #  secondaryFileNames = cms.untracked.vstring()
+#)
+
+#---- Define the test source files to be read using the xrootd protocol (root://), or local files (file:)
+#---- Several files can be comma-separated
+#---- A local file, for testing, can be downloaded using, e.g., the cern open data client (https://cernopendata-client.readthedocs.io/en/latest/):
+#---- python cernopendata-client download-files --recid 6004 --filter-range 1-1
+#---- For running over larger number of files, comment out this section and use/uncomment the FileUtils infrastructure below
+#if isData: 
+#    sourceFile="root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root"
+#else: 
+#    sourceFile="root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_s-channel_4f_InclusiveDecays_13TeV-amcatnlo-pythia8/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/00000/0EB5E88C-FE0D-E611-915D-003048FFD76C.root"
+#process.source = cms.Source("PoolSource",
+#    fileNames = cms.untracked.vstring(
+#        #'file:/playground/1EC938EF-ABEC-E211-94E0-90E6BA442F24.root'
+#        sourceFile
+#    )
+#)
+
+#---- Alternatively, to run on larger scale, one could use index files as obtained from the Cern Open Data Portal
+#---- and pass them into the PoolSource.  The example is for 2012 data
+files = ['root://eospublic.cern.ch//eos/opendata/cms/Run2015D/SingleMuon/MINIAOD/16Dec2015-v1/10000/00006301-CAA8-E511-AD39-549F35AD8BC9.root'] # FileUtils.loadListFromFile("data/CMS_Run2015D_SingleMuon_MINIAOD_16Dec2015-v1_10000_file_index.txt")
+#files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_SingleMuon_MINIAOD_16Dec2015-v1_10001_file_index.txt"))
+#files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_SingleMuon_MINIAOD_16Dec2015-v1_20000_file_index.txt"))
+#files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_SingleMuon_MINIAOD_16Dec2015-v1_60000_file_index.txt"))
+process.source = cms.Source(
+    "PoolSource", fileNames=cms.untracked.vstring(*files))
+
+
+#---- Apply the data quality JSON file filter. This example is for 2015 data                                                                                                             
+#---- It needs to be done after the process.source definition                                                                                                                                #---- Make sure the location of the file agrees with your setup                                                                                                                           
+if isData:
+    goodJSON = "/afs/cern.ch/user/p/pllerena/workspace/4tops/produce-nanoAODs/data/Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt"
+    myLumis = LumiList.LumiList(filename=goodJSON).getCMSSWString().split(",")
+    process.source.lumisToProcess = CfgTypes.untracked(CfgTypes.VLuminosityBlockRange())
+    process.source.lumisToProcess.extend(myLumis)
+
+
+process.options = cms.untracked.PSet(
+
+)
+
+### Production Info ###
+process.configurationMetadata = cms.untracked.PSet(
+    annotation = cms.untracked.string('--python_filename nevts:-1'),
+    name = cms.untracked.string('Applications'),
+    version = cms.untracked.string('$Revision: 1.19 $')
+)
+
+### Output definition ###
+
+if isData:
+    process.NANOAODoutput = cms.OutputModule("NanoAODOutputModule",
+                                             compressionAlgorithm = cms.untracked.string('LZMA'),
+                                             compressionLevel = cms.untracked.int32(9),
+                                             dataset = cms.untracked.PSet(
+                                                 dataTier = cms.untracked.string('NANOAOD'),
+                                                 filterName = cms.untracked.string('')
+                                             ),
+                                             fileName = cms.untracked.string('Run2015D_SingleMuon_0.root'),
+                                             outputCommands = process.NANOAODEventContent.outputCommands
+    )
+
+else:
+   process.NANOAODSIMoutput = cms.OutputModule("NanoAODOutputModule",
+                                               compressionAlgorithm = cms.untracked.string('LZMA'),
+                                               compressionLevel = cms.untracked.int32(9),
+                                               dataset = cms.untracked.PSet(
+                                                   dataTier = cms.untracked.string('NANOAODSIM'),
+                                                   filterName = cms.untracked.string('')
+                                               ),
+                                               fileName = cms.untracked.string('Run2015D_SingleMuon_0.root'),
+                                               outputCommands = process.NANOAODSIMEventContent.outputCommands
+   )
+
+
+### Additional output definition ###
+
+## Other statements ##
+process.load('Configuration.StandardSequences.Services_cff')
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
+from Configuration.AlCa.GlobalTag import GlobalTag
+if isData:
+    process.GlobalTag = GlobalTag(process.GlobalTag, '106X_dataRun2_v36', '')
+else:
+    process.GlobalTag = GlobalTag(process.GlobalTag, '102X_mcRun2_asymptotic_v8', '')
+
+## Path and EndPath definitions ##
+if isData:
+    process.nanoAOD_step = cms.Path(process.nanoSequence)
+else:
+    process.nanoAOD_step = cms.Path(process.nanoSequenceMC)
+
+process.endjob_step = cms.EndPath(process.endOfProcess)
+
+if isData:
+    process.NANOAODoutput_step = cms.EndPath(process.NANOAODoutput)
+else:
+    process.NANOAODSIMoutput_step = cms.EndPath(process.NANOAODSIMoutput)
+
+## Schedule definition ##
+if isData:
+    process.schedule = cms.Schedule(process.nanoAOD_step,process.endjob_step,process.NANOAODoutput_step)
+else:
+    process.schedule = cms.Schedule(process.nanoAOD_step,process.endjob_step,process.NANOAODSIMoutput_step)
+
+from PhysicsTools.PatAlgos.tools.helpers import associatePatAlgosToolsTask
+associatePatAlgosToolsTask(process)
+
+# customisation of the process.
+
+## Automatic addition of the customisation function from PhysicsTools.NanoAOD.nano_cff ##
+if isData:
+    from PhysicsTools.NanoAOD.nano_cff import nanoAOD_customizeData
+else:
+    from PhysicsTools.NanoAOD.nano_cff import nanoAOD_customizeMC
+
+## call to customisation function nanoAOD_customizeData imported from PhysicsTools.NanoAOD.nano_cff
+if isData:
+    process = nanoAOD_customizeData(process)
+else:
+    process = nanoAOD_customizeMC(process)
+
+# Automatic addition of the customisation function from Configuration.DataProcessing.Utils
+from Configuration.DataProcessing.Utils import addMonitoring
+
+#call to customisation function addMonitoring imported from Configuration.DataProcessing.Utils
+process = addMonitoring(process)
+
+# End of customisation functions
+
+# Customisation from command line
+
+# Add early deletion of temporary data products to reduce peak memory need
+from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
+process = customiseEarlyDelete(process)
+# End adding early deletion
+
+
+Updating process to run DeepBoostedJet on datasets before 103X
+Updating process to run ParticleNet before it's included in MiniAOD
+Updating process to run DeepDoubleX on datasets before 104X
+Updating process to run DeepDoubleXv2 on datasets before 11X
+Will recalculate the following discriminators on AK8 jets: pfDeepBoostedJetTags:probTbcq, pfDeepBoostedJetTags:probTbqq, pfDeepBoostedJetTags:probTbc, pfDeepBoostedJetTags:probTbq, pfDeepBoostedJetTags:probWcq, pfDeepBoostedJetTags:probWqq, pfDeepBoostedJetTags:probZbb, pfDeepBoostedJetTags:probZcc, pfDeepBoostedJetTags:probZqq, pfDeepBoostedJetTags:probHbb, pfDeepBoostedJetTags:probHcc, pfDeepBoostedJetTags:probHqqqq, pfDeepBoostedJetTags:probQCDbb, pfDeepBoostedJetTags:probQCDcc, pfDeepBoostedJetTags:probQCDb, pfDeepBoostedJetTags:probQCDc, pfDeepBoostedJetTags:probQCDothers, pfDeepBoostedDiscriminatorsJetTags:TvsQCD, pfDeepBoostedDiscriminatorsJetTags:WvsQCD, pfDeepBoostedDiscriminatorsJetTags:ZvsQCD, pfDeepBoostedDiscriminatorsJetTags:ZbbvsQCD, pfDeepBoostedDiscriminatorsJetTags:HbbvsQCD, pfDeepBoostedDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedDeepBoostedJetTags:probTbcq, pfMassDecorrelatedDeepBoostedJetTags:probTbqq, pfMassDecorrelatedDeepBoostedJetTags:probTbc, pfMassDecorrelatedDeepBoostedJetTags:probTbq, pfMassDecorrelatedDeepBoostedJetTags:probWcq, pfMassDecorrelatedDeepBoostedJetTags:probWqq, pfMassDecorrelatedDeepBoostedJetTags:probZbb, pfMassDecorrelatedDeepBoostedJetTags:probZcc, pfMassDecorrelatedDeepBoostedJetTags:probZqq, pfMassDecorrelatedDeepBoostedJetTags:probHbb, pfMassDecorrelatedDeepBoostedJetTags:probHcc, pfMassDecorrelatedDeepBoostedJetTags:probHqqqq, pfMassDecorrelatedDeepBoostedJetTags:probQCDbb, pfMassDecorrelatedDeepBoostedJetTags:probQCDcc, pfMassDecorrelatedDeepBoostedJetTags:probQCDb, pfMassDecorrelatedDeepBoostedJetTags:probQCDc, pfMassDecorrelatedDeepBoostedJetTags:probQCDothers, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:TvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:WvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZHbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:HbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZHccvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:bbvsLight, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ccvsLight, pfParticleNetJetTags:probTbcq, pfParticleNetJetTags:probTbqq, pfParticleNetJetTags:probTbc, pfParticleNetJetTags:probTbq, pfParticleNetJetTags:probTbel, pfParticleNetJetTags:probTbmu, pfParticleNetJetTags:probTbta, pfParticleNetJetTags:probWcq, pfParticleNetJetTags:probWqq, pfParticleNetJetTags:probZbb, pfParticleNetJetTags:probZcc, pfParticleNetJetTags:probZqq, pfParticleNetJetTags:probHbb, pfParticleNetJetTags:probHcc, pfParticleNetJetTags:probHqqqq, pfParticleNetJetTags:probQCDbb, pfParticleNetJetTags:probQCDcc, pfParticleNetJetTags:probQCDb, pfParticleNetJetTags:probQCDc, pfParticleNetJetTags:probQCDothers, pfParticleNetDiscriminatorsJetTags:TvsQCD, pfParticleNetDiscriminatorsJetTags:WvsQCD, pfParticleNetDiscriminatorsJetTags:ZvsQCD, pfParticleNetDiscriminatorsJetTags:ZbbvsQCD, pfParticleNetDiscriminatorsJetTags:HbbvsQCD, pfParticleNetDiscriminatorsJetTags:HccvsQCD, pfParticleNetDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedParticleNetJetTags:probXbb, pfMassDecorrelatedParticleNetJetTags:probXcc, pfMassDecorrelatedParticleNetJetTags:probXqq, pfMassDecorrelatedParticleNetJetTags:probQCDbb, pfMassDecorrelatedParticleNetJetTags:probQCDcc, pfMassDecorrelatedParticleNetJetTags:probQCDb, pfMassDecorrelatedParticleNetJetTags:probQCDc, pfMassDecorrelatedParticleNetJetTags:probQCDothers, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XbbvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XccvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XqqvsQCD, pfParticleNetMassRegressionJetTags:mass, pfDeepDoubleBvLJetTags:probHbb, pfDeepDoubleCvLJetTags:probHcc, pfDeepDoubleCvBJetTags:probHcc, pfMassIndependentDeepDoubleBvLJetTags:probHbb, pfMassIndependentDeepDoubleCvLJetTags:probHcc, pfMassIndependentDeepDoubleCvBJetTags:probHcc, pfMassIndependentDeepDoubleBvLV2JetTags:probHbb, pfMassIndependentDeepDoubleCvLV2JetTags:probHcc, pfMassIndependentDeepDoubleCvBV2JetTags:probHcc
+add DeepMET Producers
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc820/data/PhysicsTools/NanoAOD/data/el_BDTG_2017.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+### End of job
